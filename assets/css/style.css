@@ -24830,6 +24830,37 @@ body.page-people p {
 }
 
 
+/* index op 半透明遮罩 */
+.carousel-inner-opslider .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); 半透明黑色 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  --bs-overlay-bg:none;
+  pointer-events: none; /* 可選：讓遮罩不擋住互動 */
+  z-index:1;
+}
+.carousel-inner-opslider .container,.carousel-control-buttons,.hero-heading {
+  z-index:2;
+}
+
+@media (max-width: 767.98px) {
+  .content-text {
+    --bs-content-text-padding: 400px 0 100px 0;
+  }
+  .carousel-inner-opslider .display-2 {
+      font-size: 50px;
+  }
+  .carousel-inner-opslider .overlay {
+      background: rgba(0, 0, 0, 0.5); 
+  }
+}
+/* index op 半透明遮罩 end */
+
+
 @media (max-width: 768px) {
   .navbar-brand .logo,.navbar-brand-p {
     text-align: center;
