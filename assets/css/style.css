@@ -9324,6 +9324,7 @@ body {
   background-position: left 100%;
   transition-duration: 0.5s;
   --bs-btn-border-radius: 0 !important;
+  color: var(--bs-primary) ;
 }
 .team-wrapper:hover .team-author-image img {
   transform: scale(1.03);
@@ -24855,7 +24856,7 @@ body.page-people p {
       font-size: 50px;
   }
   .carousel-inner-opslider .overlay {
-      background: rgba(0, 0, 0, 0.5); 
+      background: rgba(0, 0, 0, 0.35); 
   }
 }
 /* index op 半透明遮罩 end */
